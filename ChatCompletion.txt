@@ -1,0 +1,51 @@
+ChatCompletion
+    (id='chatcmpl-AaOA3YbYCk53zjmJhKd1CE7axdwxn', 
+    choices=[Choice(
+        finish_reason='tool_calls', 
+        index=0, 
+        logprobs=None, 
+        message=ChatCompletionMessage(
+            content=None, 
+            refusal=None, 
+            role='assistant', 
+            audio=None, 
+            function_call=None, 
+            tool_calls=[
+                ChatCompletionMessageToolCall(
+                    id='call_KXKHU8xnybMNRR7gnLZnCIaN', 
+                    function=Function(
+                        arguments='{"destination_city": "Rome", "ticket_class": "first"}',
+                        name='get_ticket_price'), 
+                        type='function'), 
+                ChatCompletionMessageToolCall(
+                    id='call_jWB8Bn733hIBVYHV4cORRrux',
+                    function=Function(
+                        arguments='{"destination_city": "Rome", "ticket_class": "business"}', 
+                        name='get_ticket_price'), 
+                        type='function')
+                    ]
+                )
+        )
+    ], 
+    created=1733236047, 
+    model='gpt-4o-mini-2024-07-18', 
+    object='chat.completion', 
+    service_tier=None, 
+    system_fingerprint='fp_0705bf87c0', 
+    usage=CompletionUsage(
+        completion_tokens=58, 
+        prompt_tokens=171, 
+        total_tokens=229, 
+        completion_tokens_details=CompletionTokensDetails(
+            accepted_prediction_tokens=0, 
+            audio_tokens=0, 
+            reasoning_tokens=0, 
+            rejected_prediction_tokens=0
+            ), 
+            prompt_tokens_details=PromptTokensDetails(
+                audio_tokens=0, 
+                cached_tokens=0
+            )
+        )
+   )
+        
